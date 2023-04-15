@@ -1,6 +1,6 @@
 # Maze
 
-Pagina HTML con JavaScript
+Página HTML con JavaScript
 
 * Tailwind CSS
 * Canvas
