@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Oswald";
+        src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .oswald {
+        font-family: "Oswald";
+    }
+}
+
+/* npx tailwindcss -i ./src/style.css -o ./public/css/style.css --watch   */

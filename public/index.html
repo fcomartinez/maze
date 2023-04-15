@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css" >
+</head>
+<body class="bg-gradient-to-r from-lime-300 to-orange-400 oswald">
+    <div id="resolution" class="bg-black fixed w-full h-full lg:hidden">
+        <p class="text-white text-center text-6xl">Ajust screen</p>
+    </div>
+    <header class="pt-7">
+        <h1 class="text-5xl text-center uppercase font-bold">Maze</h1>
+        <p id="feedback" class="text-center text-xl py-3 font-bold">Note: In the game, use arrows keys to move.</p>
+    </header>
+    <main class="h-[35rem]">
+        <div id="name" class="my-5">
+            <form id="formulario" class="p-16">
+                <div class="flex justify-center items-center">
+                    <label for="nickname" class="text-xl font-bold">Nickname:</label>
+                    <input type="text" name="nickname" id="nickname" class="p-2 m-3 rounded-2xl border-none" placeholder="Your nickname">
+                    <input type="button" id="startBtn" class="bg-black text-white text-center py-2 px-9 uppercase font-bold border-none rounded-2xl hover:cursor-pointer" value="Start">
+                </div>
+            </form>
+        </div>
+        <div id="game" class="my-5 hidden">
+            <canvas id="canvas" width="1000px" height="500px" class="pt-6 mx-auto"></canvas>
+        </div>
+        <div id="winner" class="my-5 hidden">
+            <h2 class="text-2xl text-center font-semibold uppercase">Best Scores</h2>
+            <div id="scores" class="flex flex-col items-center gap-4 mt-4"></div>
+        </div>
+    </main>
+    <footer>
+        <p class="text-center text-xl mt-6">Francisco Martinez - 2022</p>
+    </footer>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
