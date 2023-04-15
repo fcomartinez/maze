@@ -6,3 +6,5 @@ Página HTML con JavaScript
 * Canvas
 * IndexDB
 * Módulos
+
+https://maze-v3.netlify.app
